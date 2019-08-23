@@ -12,7 +12,7 @@ namespace POC.CP.WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return new OkObjectResult(new {result = "OK", DateTime = DateTime.Now.ToString(CultureInfo.CurrentCulture)});
+            return new OkObjectResult(new {result = "OK", DateTime = DateTime.Now.ToString(CultureInfo.CurrentCulture), message="Roland was here"});
         }
     }
 }
